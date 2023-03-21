@@ -1,0 +1,11 @@
+version: "3.0"
+services:
+  databag:
+    container_name: databag
+    image: balzack/databag:latest
+    ports:
+      - "7000:7000"
+    volumes:
+      - ./databag-data:/var/lib/databag
+    environment:
+      - ADMIN=XXYYZZ!!22##44
